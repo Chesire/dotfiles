@@ -26,8 +26,10 @@ brew 'zlib' # Needed for Memcached
 # Development
 brew 'imagemagick'
 brew 'node'
-brew 'android-studio'
 brew 'ruby'
+
+# Development Apps
+cask 'android-studio'
 
 # Apps
 cask 'alfred'
