@@ -42,9 +42,9 @@ cask 'java'
 cask 'macdown'
 cask 'slack'
 cask 'spotify'
-# cask 'sublime-text' # Maybe try this at some point, for now will stick with Textmate
 cask 'textmate'
 cask 'the-unarchiver'
+cask 'visual-studio-code'
 
 # Quicklook
 cask 'qlcolorcode'

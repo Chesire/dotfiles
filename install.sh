@@ -18,6 +18,10 @@ brew bundle
 # This is a default directory for macOS user accounts but doesn't comes pre-installed
 mkdir $HOME/Sites
 
+# Create a Developer directory
+# This used to be used for xcode, but for now it will be where we store code repos
+mkdir $HOME/Developer
+
 # Removes .zshrc from $HOME (if it exists) and symlinks the .zshrc file from the .dotfiles
 rm -rf $HOME/.zshrc
 ln -s $HOME/.dotfiles/.zshrc $HOME/.zshrc
