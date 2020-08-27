@@ -184,9 +184,9 @@ sudo systemsetup -settimezone "Europe/London" > /dev/null
 # sudo pmset -a autorestart 1
 
 # Restart automatically if the computer freezes
-sudo systemsetup -setrestartfreeze on
+# sudo systemsetup -setrestartfreeze on
 
-# Sleep the display after 15 minutes
+# Sleep the display after 5 minutes
 sudo pmset -a displaysleep 5
 
 # Disable machine sleep while charging
@@ -226,7 +226,7 @@ sudo pmset -b sleep 5
 # defaults write com.apple.screensaver askForPasswordDelay -int 0
 
 # Save screenshots to the desktop
-# defaults write com.apple.screencapture location -string "${HOME}/Desktop"
+defaults write com.apple.screencapture location -string "${HOME}/Desktop"
 
 # Save screenshots in PNG format (other options: BMP, GIF, JPG, PDF, TIFF)
 # defaults write com.apple.screencapture type -string "png"
@@ -370,7 +370,7 @@ defaults write com.apple.dock mouse-over-hilite-stack -bool true
 defaults write com.apple.dock mineffect -string "scale"
 
 # Minimize windows into their application’s icon
-defaults write com.apple.dock minimize-to-application -bool true
+# defaults write com.apple.dock minimize-to-application -bool true
 
 # Enable spring loading for all Dock items
 # defaults write com.apple.dock enable-spring-load-actions-on-all-items -bool true
