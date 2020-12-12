@@ -7,6 +7,13 @@ export DOTFILES=$HOME/.dotfiles
 # Path to your oh-my-zsh installation.
 export ZSH=$HOME/.oh-my-zsh
 
+# Ensure thefuck runs
+eval $(thefuck --alias)
+
+# Start Keychain
+/usr/bin/keychain $HOME/.ssh/id_rsa
+source $HOME/.keychain/${LAPTOP_NAME}
+
 # Enable completions
 autoload -Uz compinit && compinit
 
